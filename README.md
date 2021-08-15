@@ -1,4 +1,4 @@
-# Test-15-08-2021
+# Test1-15-08-2021
 2. Consider the following problem:
 
 Write a C/C++ or Java program that prints each number from 1 to 100 on a new line.
