@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <iostream>
+//Program by Marcos Frederico Bortotti
+// Readme: This program will show in each line the value from 1 to 100 with some
+// peculiarities. If the number was multiple of 3, insted to show the
+// number will appear Foo. If the number was multiple of 5, insted to show the
+// number will appear Baa. If the number was 35 will show FooBaa.
+
+using namespace std;
+
+int
+main ()
+{
+  int resta;
+  int restb;
+  for (int i = 1; i <= 100; i++) // loop for swipe from 1 to 100
+    {
+      resta = i % 3; // divide the number for 3 and store on "resta" the rest
+      restb = i % 5; // divide the number for 5 and store on "restb" the rest
+      if (resta == 0 && restb ==0) // if was 35 the number will show "FooBaa"
+	{
+	  cout << "FooBaa" << endl;
+	}
+      else if (resta == 0) //Test is "resta" was multiple of 3, if yes show "Foo"
+	{
+	  cout << "Foo" << endl;
+	}
+      else if (restb == 0) //Test is "restb" was multiple of 5, if yes show "Baa"
+	{
+	  cout << "Baa" << endl;
+	}
+      else // if was any condition above, show the number from 1 to 100
+	{
+	  cout << i  << endl;
+	}
+    }
+
+  return 0;
+}
+
